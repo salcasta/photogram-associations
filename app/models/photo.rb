@@ -29,7 +29,7 @@ class Photo < ApplicationRecord
 
   # Photo#likes: returns rows from the likes table associated to this photo by the photo_id column
 
-  has_many(:liks, class_name: "Like", foreign_key: "photo_id")
+  has_many(:likes, class_name: "Like", foreign_key: "photo_id")
 
   ## Indirect associations
 
